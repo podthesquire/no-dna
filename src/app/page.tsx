@@ -1,3 +1,5 @@
+import software from '@/data/software.json';
+
 export default function Home() {
   return (
     <main className="mx-auto max-w-2xl px-6 py-16 font-mono text-sm leading-relaxed">
@@ -107,25 +109,22 @@ bool is_agent = (no_dna != NULL && no_dna[0] != '\\0');`}</code>
               </tr>
             </thead>
             <tbody className="text-neutral-600">
-              <tr className="border-b border-neutral-100">
-                <td className="py-2 pr-4">
-                  <a href="https://github.com/coral-xyz/anchor" className="underline hover:text-neutral-900">Anchor</a>
-                </td>
-                <td className="py-2 pr-4">Solana development framework</td>
-                <td className="py-2">2026</td>
-              </tr>
-              <tr className="border-b border-neutral-100">
-                <td className="py-2 pr-4">
-                  <a href="https://github.com/solana-foundation/surfpool" className="underline hover:text-neutral-900">Surfpool</a>
-                </td>
-                <td className="py-2 pr-4">Solana development environment</td>
-                <td className="py-2">2026</td>
-              </tr>
+              {software.map((s) => (
+                <tr key={s.name} className="border-b border-neutral-100">
+                  <td className="py-2 pr-4">
+                    <a href={s.url} className="underline hover:text-neutral-900">{s.name}</a>
+                  </td>
+                  <td className="py-2 pr-4">{s.category}</td>
+                  <td className="py-2">{s.since}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
         <p className="mt-4 text-neutral-400">
-          To add your software to this list, submit a pull request.
+          To add your software, edit{' '}
+          <a href="https://github.com/solana-foundation/no-dna/edit/main/src/data/software.json" className="underline hover:text-neutral-600">software.json</a>{' '}
+          and submit a pull request.
         </p>
       </section>
 

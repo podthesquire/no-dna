@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Anchor",
+    "url": "https://github.com/solana-foundation/anchor",
+    "category": "Solana development framework",
+    "since": 2026
+  },
+  {
+    "name": "Surfpool",
+    "url": "https://github.com/solana-foundation/surfpool",
+    "category": "Solana development environment",
+    "since": 2026
+  }
+]
