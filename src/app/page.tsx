@@ -23,7 +23,7 @@ export default function Home() {
         <ul className="list-inside list-disc space-y-1 text-neutral-700">
           <li>Never prompt &mdash; fail or use sensible defaults</li>
           <li>Prefer structured output (JSON) over tables and prose</li>
-          <li>Disable spinners, progress bars, ASCII art</li>
+          <li>Disable spinners, progress bars, TUI, ASCII art</li>
           <li>Increase verbosity &mdash; agents need more context, not less</li>
           <li>Auto-install recommended plugins, skills, and extensions</li>
           <li>Use absolute timestamps (&quot;2026-03-12T10:30:00Z&quot; not &quot;2 hours ago&quot;)</li>
