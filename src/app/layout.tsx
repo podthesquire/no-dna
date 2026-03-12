@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'no-dna.org',
+  title: 'NO_DNA: detect non-human operators',
   description: 'An informal standard for CLI tools to detect non-human operators.',
 };
 

@@ -3,7 +3,8 @@ import software from '@/data/software.json';
 export default function Home() {
   return (
     <main className="mx-auto max-w-2xl px-6 py-16 font-mono text-sm leading-relaxed">
-      <h1 className="mb-10 text-3xl font-bold tracking-tight">NO_DNA: <span className="font-normal text-neutral-500">detect non-human operators</span></h1>
+      <h1 className="mb-1 text-2xl font-bold tracking-tight">no-dna.org</h1>
+      <p className="mb-10 text-neutral-500">An informal standard for CLI tools to detect non-human operators.</p>
 
       <section className="mb-10">
         <p className="mb-4">
