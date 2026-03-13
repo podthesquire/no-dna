@@ -10,5 +10,11 @@
     "url": "https://github.com/solana-foundation/surfpool",
     "category": "Solana development environment",
     "since": 2026
+  },
+  {
+    "name": "Agent Messenger",
+    "url": "https://github.com/Sortis-AI",
+    "category": "Encrypted private messaging",
+    "since": 2026
   }
 ]
